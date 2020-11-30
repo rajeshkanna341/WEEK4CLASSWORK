@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>COLORBOX</title>
+        <style>
+            body{
+                background-color: lightsteelblue;
+            }
+            h1{
+                text-align: center;
+            }
+            nav {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 30px ;
+                margin-bottom: 30px;
+                }
+            nav a{
+                font-size: 1.5em;
+                text-decoration: none;
+                color: chocolate;
+            }
+            img{
+                
+                margin: 10px 50px;
+            }
+            #wrapper{
+                width: 80%;
+                margin:auto;
+            }
+            p{
+                
+            }
+        </style>
+		<link rel="stylesheet" href="colorbox/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="colorbox/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	
+    <body>
+        <h1>BEST PLACES TO VISIT IN INDIA</h1>
+        <nav>
+            <a href="RAJESH.html">Rajesh</a>
+            <a href="MEET.html">Meet</a>
+            <a href="JENI.html">Jeni</a>
+            <a href="BHAVNEET.html">Bhavneet</a>
+            <a href="JASKIRAT.html">Jaskirat</a>
+        </nav>
+        <div id="wrapper">
+        <h2>THE FOLLOWING SLIDESHOW IS DONE USING COLORBOX.JS</h2>
+       <a class="group4"  href="colorbox/content/mounteverst.jpg" title="MOUNT EVERST."><img src="colorbox/content/mounteverst.jpg" width="150" height="150"></a>
+		<a class="group4"  href="colorbox/content/taj mahal.jpg" title="TAJ MAHAL"><img src="colorbox/content/taj mahal.jpg" heigh="285" width="225"></a>
+		<a class="group4"  href="colorbox/content/parliament.jpg" title="INDIAN PARLIAMENT"><img src="colorbox/content/parliament.jpg" height="150" width="150"></a>
+		<a class="group4"  href="colorbox/content/amritsar temple.jpg" title="GOLDEN TEMPLE"><img src="colorbox/content/amritsar temple.jpg" height="150" width="150"></a>
+        <h2>ABOUT MOUNTEVERST</h2>
+        <p>Mount Everest is part of the Himalayan range, and it is the tallest peak at 8,844.43 meters (29,016 feet) high. And it's still growing at a height of about 40 centimeters (16 inches) per century.
+        </p>
+        <h2>ABOUT TAJMAHAL</h2>
+        <p>Taj Mahal is a famous Indian landmark and tourist magnet, attracting more than a million tourists every year,The most recognizable feature is the white dome at the peak of the mausoleum. Often called the 'onion dome', it rises to about 35 meters (115 feet) and is surrounded by four other domes.
+        </p>
+        <h2>ABOUT INDIAN PARLIAMENT</h2>
+		<p>Parliament is the supreme legislative body of a country. Our Parliament comprises of the President and the two Houses—Lok Sabha (House of the People) and Rajya Sabha (Council of States).
+        Current President of India - Pranab Mukherjee-Since 25 July 2012
+        </p>
+        <h2>ABOUT GOLDEN TEMPLE</h2>
+        <p>Golden Temple is also known as Sri Harmandir Sahab and Sri Darbar Sahab. Guru Arjun Dev, the fifth Sikh Guru, gave the idea of construction of a temple where Sikhs can come and worship. The land for the temple was bought from the Zamindars by Guru Ramdas. Hazrat Mian Mir Ji, a Muslim saint, laid the foundation of the temple and the construction was supervised by Guru Arjun Dev.</p>
+        </div>
+	</body>
+</html>
