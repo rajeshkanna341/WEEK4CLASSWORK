@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>bxSlider</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet"/>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        #wrapper {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #bxslider{
+            margin-left: 150px;
+            margin-bottom: 0;
+        }
+        h1{
+            margin-top: 10px;
+            text-align: center;
+            font-family: "Colonna MT","Helvetica Neue",sans-serif;
+            color:darkcyan;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.5em; 
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        nav a{
+            text-decoration: none;
+            color: darkcyan;
+        }
+        li {
+            font-size: 1.3em;
+        }
+        footer {
+            text-align: center;
+            font-style: italic;
+            color: darkcyan;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#travelling-slider").bxSlider({
+                mode: 'fade',
+                captions: true,
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 900,
+                speed: 1000,
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <header><h1>India Tourism</h1></header>
+        <nav>
+            <a href="RAJESH.html">Rajesh</a>
+            <a href="MEET.html">Meet</a>
+            <a href="JENI.html">Jeni</a>
+            <a href="BHAVNEET.html">Bhavneet</a>
+            <a href="JASKIRAT.html">Jaskirat</a>
+        </nav>
+        <hr>
+        <li>The following slider is created using bxSlider.</li>
+        <br>
+        <div id="bxslider">
+        <ul id="travelling-slider">
+            <li><img src="bx_slider_images/taj-mahal.jpg" title="Taj Mahal" width="900px" height="500px"/></li>
+            <li><img src="bx_slider_images/amritsar.jpg" title="Amritsar Golden Temple" width="900px" height="500px"/></li>
+            <li><img src="bx_slider_images/delhi-gate.jpg" title="Delhi Gate" width="900px" height="500px"/></li>
+            <li><img src="bx_slider_images/temple.jpg" title="Temple" width="900px" height="500px"/></li>
+            <li><img src="bx_slider_images/nature.jpg" title="Nature" width="900px" height="500px"/></li>
+        </ul>
+        </div>
+        <hr>
+        <footer>
+            <p>Copyright &copy;&nbsp;
+                <script>
+                    var today= new Date();
+                    document.write(today.getFullYear());
+                </script>
+                &nbsp;India Tourism<br>
+                Jeni Sanjaybhai Patel
+            </p>
+        </footer>
+    </div>
+</body>
+<html>
